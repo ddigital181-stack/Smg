@@ -1,3 +1,17 @@
-# SMG — Interface web futuriste
+# SMG
 
-Application React + TypeScript à initialiser sur la branche principale.
+Application web futuriste développée avec React, TypeScript, Vite et Lucide Icons.
+
+## Développement
+
+```bash
+npm install
+npm run dev
+```
+
+## Production
+
+```bash
+npm run build
+npm run preview
+```
