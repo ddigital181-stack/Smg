@@ -132,7 +132,7 @@ function AuthScreen({ mode, setScreen }: { mode: 'login' | 'signup'; setScreen: 
 
         <div className="auth-form">
           <h2>{isSignup ? 'Créer un compte' : 'Se connecter'}</h2>
-          <form onSubmit={(event) => { event.preventEvent; setScreen('dashboard'); }}>
+          <form onSubmit={(event) => { event.preventDefault(); setScreen('dashboard'); }}>
             <AuthPhone country={country} setCountry={setCountry} />
             <small className="field-help">7–11 chiffres</small>
             <PasswordField label={isSignup ? 'Mot de passe' : 'Entrez votre mot de passe'} />
